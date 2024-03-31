@@ -37,6 +37,13 @@ const Home = () => {
 
       <Text style={styles.BMIText}>0.00</Text>
 
+      <View style={styles.rectangles} >
+          <View style={{backgroundColor: 'yellow', flex: 0.5}} />
+          <View style={{backgroundColor: 'green', flex: 0.5}} />
+          <View style={{backgroundColor: 'red', flex: 0.5}} />
+      </View>
+
+
    
     </View>
   );
@@ -87,7 +94,13 @@ const styles = StyleSheet.create({
     marginTop: 40,
   },
 
-
+  rectangles: {
+    marginTop: 100,
+    flexDirection: 'row',
+    height: 250,
+    padding: 20,
+    gap: 20,
+  },
 
 });
 
